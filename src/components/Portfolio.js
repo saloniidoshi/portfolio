@@ -82,10 +82,9 @@ const Portfolio = () => {
     {
       title: "AI-Powered Meeting & CRM Integration Platform",
       description:
-        "Designed and developed a scalable backend system using Node.js, Express, and MongoDB to automate meeting transcription, generate dynamic reports, and integrate with CRMs like Intelliflo and IRESS. Features include AI-driven summarization, SharePoint & Zoom integration, subscription management via Chargebee, and Firebase notifications.",
+        "Designed and developed a scalable backend system using Node.js, and MongoDB to automate meeting transcription, generate dynamic reports, and integrate with CRMs like Intelliflo and IRESS. Features include AI-driven summarization, SharePoint & Zoom integration, subscription management via Chargebee, and Firebase notifications.",
       tech: [
         "Node.js",
-        "Express.js",
         "MongoDB",
         "JWT",
         "NLP/ML",
