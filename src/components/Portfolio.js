@@ -63,22 +63,17 @@ const Portfolio = () => {
       period: "2022 - Present",
       role: "Web Developer",
       company: "Zignuts Technolab",
-      description: "Led development of scalable backend systems, API integrations, and database optimization projects.",
+      description:
+        "Led backend development for web applications using Node.js and Sails.js. Worked on scalable RESTful APIs, integrated third-party services, optimized databases, and deployed cloud-ready solutions.",
       achievements: [
-        "Improved system performance by 40%",
-        "Successfully integrated 15+ third-party APIs",
-        "Mentored 3 junior developers",
-      ],
-    },
-    {
-      period: "2021 - 2022",
-      role: "Junior Node.js Developer",
-      company: "StartupTech",
-      description: "Developed RESTful APIs and worked on microservices architecture using Node.js and MongoDB.",
-      achievements: [
-        "Built 20+ RESTful APIs",
-        "Reduced database query time by 30%",
-        "Implemented automated testing suite",
+        "Improved system performance by 40% through efficient API design and database indexing",
+        "Successfully integrated 15+ third-party APIs including payment gateways and analytics",
+        "Implemented automated testing suite using Mocha and Chai, increasing reliability",
+        "Designed and developed scalable RESTful APIs with Node.js and Express/Sails.js",
+        "Deployed applications to AWS and Firebase, ensuring 99.9% uptime",
+        "Optimized MongoDB and PostgreSQL queries for faster data retrieval",
+        "Managed authentication and authorization flows using JWT, Firebase Auth, and AWS Cognito",
+        "Streamlined code collaboration using Git, GitHub, and CI/CD pipelines",
       ],
     },
   ]
@@ -87,10 +82,9 @@ const Portfolio = () => {
     {
       title: "AI-Powered Meeting & CRM Integration Platform",
       description:
-        "Designed and developed a scalable backend system using Node.js, Express, and MongoDB to automate meeting transcription, generate dynamic reports, and integrate with CRMs like Intelliflo and IRESS. Features include AI-driven summarization, SharePoint & Zoom integration, subscription management via Chargebee, and Firebase notifications.",
+        "Designed and developed a scalable backend system using Node.js, and MongoDB to automate meeting transcription, generate dynamic reports, and integrate with CRMs like Intelliflo and IRESS. Features include AI-driven summarization, SharePoint & Zoom integration, subscription management via Chargebee, and Firebase notifications.",
       tech: [
         "Node.js",
-        "Express.js",
         "MongoDB",
         "JWT",
         "NLP/ML",
@@ -141,8 +135,14 @@ const Portfolio = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-white/20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="font-bold text-xl bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              SD
+            <div className="w-12 h-12 rounded-full overflow-hidden">
+              <img
+                src="/profilepic.jpg"
+                alt="Saloni Doshi"
+                className="w-full h-full object-cover"
+                loading="eager"
+                draggable="false"
+              />
             </div>
 
             {/* Desktop Navigation */}
@@ -151,9 +151,8 @@ const Portfolio = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                    activeSection === item.toLowerCase() ? "text-blue-600" : "text-slate-600"
-                  }`}
+                  className={`text-sm font-medium transition-colors hover:text-blue-600 ${activeSection === item.toLowerCase() ? "text-blue-600" : "text-slate-600"
+                    }`}
                 >
                   {item}
                 </button>
@@ -177,9 +176,8 @@ const Portfolio = () => {
                   <button
                     key={item}
                     onClick={() => scrollToSection(item.toLowerCase())}
-                    className={`text-left px-2 py-2 text-sm font-medium transition-colors hover:text-blue-600 ${
-                      activeSection === item.toLowerCase() ? "text-blue-600" : "text-slate-600"
-                    }`}
+                    className={`text-left px-2 py-2 text-sm font-medium transition-colors hover:text-blue-600 ${activeSection === item.toLowerCase() ? "text-blue-600" : "text-slate-600"
+                      }`}
                   >
                     {item}
                   </button>
@@ -198,32 +196,54 @@ const Portfolio = () => {
             className={`text-center transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
             <div className="mb-6">
-              <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mb-6 shadow-lg hover:scale-105 transition-transform duration-300">
-                <span className="text-2xl sm:text-4xl font-bold text-white">SD</span>
+              <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mb-6 shadow-lg hover:scale-105 transition-transform duration-300 overflow-hidden">
+                <img
+                  src="/profilepic.jpg"  // replace with your actual image path or URL
+                  alt="Saloni Doshi"
+                  className="w-full h-full object-cover rounded-full"
+                  loading="eager"
+                  draggable="false"
+                />
               </div>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-4">
               Saloni Doshi
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-slate-600 mb-4 max-w-2xl mx-auto px-4">
-              Backend Developer specializing in Node.js
+              Backend Developer with expertise in Node.js and scalable web services
             </p>
             <p className="text-base sm:text-lg text-slate-500 mb-8 max-w-xl mx-auto px-4">
               Building scalable, high-performance systems with 2.5+ years of experience
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-8 px-4">
-              <button className="flex items-center justify-center gap-2 px-6 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors group text-black">
+              <a
+                href="https://github.com/saloniidoshi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-6 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors group text-black"
+              >
                 <Github className="h-5 w-5 group-hover:scale-110 transition-transform" />
                 GitHub
-              </button>
-              <button className="flex items-center justify-center gap-2 px-6 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors group text-black">
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/salonidoshii/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-6 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors group text-black"
+              >
                 <Linkedin className="h-5 w-5 group-hover:scale-110 transition-transform" />
                 LinkedIn
-              </button>
-              <button className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors group">
+              </a>
+              <a
+                href="https://mail.google.com/mail/?view=cm&to=salonidoshi17@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors group"
+              >
                 <Mail className="h-5 w-5 group-hover:scale-110 transition-transform" />
                 Contact Me
-              </button>
+              </a>
             </div>
             <button
               onClick={() => scrollToSection("about")}
@@ -262,7 +282,7 @@ const Portfolio = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Code className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-sm sm:text-base text-slate-700">15+ API Integrations</span>
+                  <span className="text-sm sm:text-base text-slate-700">Integrated 15+ third-party REST APIs</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Server className="h-5 w-5 text-blue-600 flex-shrink-0" />
@@ -424,9 +444,14 @@ const Portfolio = () => {
                 </div>
                 <h3 className="font-semibold text-slate-800 mb-2 text-sm sm:text-base">Email</h3>
                 <p className="text-slate-600 break-all text-xs sm:text-sm">salonidoshi17@gmail.com</p>
-                <button className="mt-2 px-3 sm:px-4 py-2 text-xs sm:text-sm text-blue-600 hover:bg-blue-50 rounded-lg transition-colors">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&to=salonidoshi17@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 px-3 sm:px-4 py-2 text-xs sm:text-sm text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                >
                   Send Email
-                </button>
+                </a>
               </div>
               <div className="group text-center">
                 <div className="p-3 sm:p-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -434,9 +459,14 @@ const Portfolio = () => {
                 </div>
                 <h3 className="font-semibold text-slate-800 mb-2 text-sm sm:text-base">LinkedIn</h3>
                 <p className="text-slate-600 text-xs sm:text-sm">Connect with me</p>
-                <button className="mt-2 px-3 sm:px-4 py-2 text-xs sm:text-sm text-blue-600 hover:bg-blue-50 rounded-lg transition-colors">
+                <a
+                  href="https://www.linkedin.com/in/salonidoshii/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 px-3 sm:px-4 py-2 text-xs sm:text-sm text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                >
                   View Profile
-                </button>
+                </a>
               </div>
               <div className="group text-center sm:col-span-2 lg:col-span-1">
                 <div className="p-3 sm:p-4 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -444,9 +474,14 @@ const Portfolio = () => {
                 </div>
                 <h3 className="font-semibold text-slate-800 mb-2 text-sm sm:text-base">GitHub</h3>
                 <p className="text-slate-600 text-xs sm:text-sm">Check out my code</p>
-                <button className="mt-2 px-3 sm:px-4 py-2 text-xs sm:text-sm text-blue-600 hover:bg-blue-50 rounded-lg transition-colors">
+                <a
+                  href="https://github.com/saloniidoshi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 px-3 sm:px-4 py-2 text-xs sm:text-sm text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                >
                   View Repositories
-                </button>
+                </a>
               </div>
             </div>
           </div>
