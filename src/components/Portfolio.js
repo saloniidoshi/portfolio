@@ -60,7 +60,7 @@ const Portfolio = () => {
 
   const experience = [
     {
-      period: "2022 - Present",
+      period: "2022 - 2025",
       role: "Web Developer",
       company: "Zignuts Technolab",
       description:
