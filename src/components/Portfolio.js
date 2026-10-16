@@ -146,7 +146,7 @@ export default function Portfolio() {
           />
           <div>
             <p className="text-white font-semibold text-sm leading-tight">Saloni Doshi</p>
-            <p className="text-xs text-indigo-400 font-mono">Node.js Backend Developer</p>
+            {/* <p className="text-xs text-indigo-400 font-mono">Node.js Backend Developer</p> */}
           </div>
         </div>
         <button
@@ -200,7 +200,7 @@ export default function Portfolio() {
             />
             <div>
               <h1 className="text-xl font-bold text-white tracking-tight">Saloni Doshi</h1>
-              <p className="text-xs font-mono text-indigo-400">Node.js Backend Developer</p>
+              {/* <p className="text-xs font-mono text-indigo-400">Node.js Backend Developer</p> */}
             </div>
           </div>
 
@@ -304,7 +304,7 @@ Experienced in asynchronous programming, middleware development, and Git-based w
                   <Code2 className="h-4 w-4" /> // Core Competencies
                 </div>
                 <p className="leading-relaxed">
-                  Node.js • Express.js • Sails.js • MongoDB • PostgreSQL • MySQL • RESTful APIs • Microservices • AWS S3 & SQS • Firebase • Socket.IO • JWT • OAuth • Stripe API • CI/CD • Unit Testing • Git & Bitbucket
+                 Python • Node.js • Express.js • Sails.js • MongoDB • PostgreSQL • MySQL • RESTful APIs • Microservices • AWS S3 & SQS • Firebase • Socket.IO • JWT • OAuth • Stripe API • CI/CD • Unit Testing • Git & Bitbucket
                 </p>
               </div>
             </section>
