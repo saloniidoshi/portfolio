@@ -43,7 +43,7 @@ export default function Portfolio() {
   const skillCategories = [
     {
       category: "Backend & Systems",
-      skills: ["Node.js", "Express.js", "Sails.js", "RESTful APIs", "Microservices", "Socket.IO (Real-time)"],
+      skills: ["Python","Node.js", "Express.js", "Sails.js", "RESTful APIs", "Microservices", "Socket.IO (Real-time)"],
       icon: Server,
     },
     {
@@ -66,11 +66,11 @@ export default function Portfolio() {
       skills: ["Stripe Payments", "Twilio SMS", "Chargebee Subscriptions", "VS Code", "MySQL Workbench", "DBeaver", "PgAdmin", "MongoDB Compass"],
       icon: Wrench,
     },
-    {
-      category: "Learning Interests",
-      skills: ["ReactJS", "React Native", "Next.js"],
-      icon: Sparkles,
-    },
+    // {
+    //   category: "Learning Interests",
+    //   skills: ["ReactJS", "React Native", "Next.js"],
+    //   icon: Sparkles,
+    // },
   ]
 
   const experience = [
@@ -89,6 +89,20 @@ export default function Portfolio() {
         "Coordinated with QA and frontend teams to launch 3+ major client projects on schedule and within scope.",
       ],
     },
+     {
+    period: "Jan 2026 — Jun 2026",
+    role: "Web Developer",
+    company: "Dharmik Bharat Pvt Ltd",
+    description:
+      "Developed and maintained backend services using Node.js and Sails.js, building REST APIs and supporting content, user, event, and subscription-based features.",
+    achievements: [
+      "Developed and maintained RESTful APIs for content, user, event, and subscription management.",
+      "Worked with MongoDB and PostgreSQL to manage application data and implement efficient database queries.",
+      "Integrated backend services and business logic using Node.js and Sails.js.",
+      "Supported VPS deployments, production maintenance, and troubleshooting of application issues.",
+      "Collaborated directly with clients to understand requirements, resolve issues, and deliver requested improvements.",
+    ],
+  },
   ]
 
   const projects = [
@@ -195,7 +209,7 @@ export default function Portfolio() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            <span className="text-xs text-emerald-400 font-medium">Available for Node.js backend roles</span>
+            {/* <span className="text-xs text-emerald-400 font-medium">Available for Node.js backend roles</span> */}
           </div>
 
           <nav className="space-y-1.5">
@@ -249,14 +263,14 @@ export default function Portfolio() {
               <div>
                 <span className="font-mono text-xs font-bold text-indigo-600 tracking-wider uppercase">01. Overview</span>
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">
-                  Node.js Backend Developer
+                  Software Engineer | Backend & Data Engineering | MSc Data Science & AI
                 </h2>
               </div>
 
               {/* ATS Structured Executive Summary */}
               <div className="bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-8 shadow-sm space-y-4">
                 <p className="text-slate-700 leading-relaxed text-base sm:text-lg">
-Backend Developer with 2.5 years of hands-on experience building scalable and high-performance systems using Node.js, Sails.js, and Databases. Proficient in designing RESTful APIs, integrating third-party services, and optimizing database performance.
+                  MSc Data Science and AI student with 3+ years’ experience as a software developer building production Node.js applications for UK and UAE clients. Strong in API design, database optimisation, secure authentication and cloud integrations on AWS, with a growing focus on data and AI. Experienced in Agile teams, client communication, code reviews and mentoring. Seeking a technology placement or graduate role from 2027
                 </p>
                 <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
 Experienced in asynchronous programming, middleware development, and Git-based workflows. Adept at deploying backend solutions to cloud environments and automating processes for efficiency.
@@ -416,7 +430,21 @@ Experienced in asynchronous programming, middleware development, and Git-based w
                 <span className="font-mono text-xs font-bold text-indigo-600 tracking-wider uppercase">05. Education</span>
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">Academic Qualification</h2>
               </div>
-
+<div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-indigo-50 text-indigo-600 flex-shrink-0">
+                    <GraduationCap className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-900">Master of Science Data Science and Artificial Intelligence</h3>
+                    <p className="text-sm font-semibold text-indigo-600">Sheffield Hallam University • Sheffield, United Kingdom </p>
+                    {/* <p className="text-xs text-slate-500 font-mono mt-1">Cumulative GPA: 7.36 / 10</p> */}
+                  </div>
+                </div>
+                <div className="text-xs font-mono text-slate-500 bg-slate-100 px-3 py-1.5 rounded-lg self-start sm:self-auto border border-slate-200">
+                  2026 – Present
+                </div>
+              </div>
               <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-xl bg-indigo-50 text-indigo-600 flex-shrink-0">
